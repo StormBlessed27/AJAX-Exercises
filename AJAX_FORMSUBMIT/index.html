@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajax Formsubmit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  </section>
+  <section id="section14" class="section" data-scroll-spy>
+    <h2>Validacion de Formularios</h2>
+    <form class="contact-form">
+      <legend>Envianos Tu comentario</legend>
+      <input type="text" name="name" placeholder="Escribenos tu Nombre"
+        title="El Nombre solo admite letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+      <input type="email" name="email" placeholder="Escribe tu correo"
+        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+        title="el email ingresado no es valido" required>
+      <input type="text" name="subject" placeholder="Asunto a tratar" title="el asunto es requerido" required>
+      <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$"
+        title="Tu comentario no debe superar los 255 caracteres" required></textarea>
+      <input type="submit" class="form-btn btn" value="Enviar">
+
+      <div class="contact-form-loader none">
+        <img src="assets/loader.svg">
+      </div>
+      <div class="contact-form-response none">
+        <p>Los datos han sido enviados</p>
+      </div>
+
+    </form>
+  </section>
+</body>
+<script src="script.js"></script>
+
+</html>
