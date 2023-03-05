@@ -1,0 +1,2 @@
+This is a test file for the uploader.
+This is an excercise using XAMPP, PHP, JS, HTML and CSS for upload a file to a data-server.
