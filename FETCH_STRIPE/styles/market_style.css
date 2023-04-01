@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+}
+#products > * {
+  flex: 1 250px;
+  margin: 1rem;
+}
+
+.product {
+  padding: 1rem;
+
+  border-radius: 50px;
+
+  background: rgb(184, 76, 25);
+  background: linear-gradient(
+    0deg,
+    rgba(184, 76, 25, 1) 0%,
+    rgba(255, 57, 57, 1) 50%,
+    rgba(245, 135, 39, 1) 100%
+  );
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+.product:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.product figcaption {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(17, 19, 35, 0.25);
+  backdrop-filter: blur(9px);
+}
