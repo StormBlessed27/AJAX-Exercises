@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORDPRESS API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Using the WordPress Api</h1>
+  <article id="site-header" class="site">
+
+  </article>
+  <section id="posts" class="posts"></section>
+
+  <img class="loader hide" src="assets/loader.svg" alt="loading...">
+
+  <template id="post-template">
+    <article class="post">
+      <img class="post-img" src="" alt="">
+      <aside>
+        <h2 class="post-title"></h2>
+        <figure class="post-author">
+          <img src="" alt="">
+        </figure>
+        <small class="post-date"></small>
+        <br>
+        <a target="_blank" class="post-link">Ver publicacion Original</a>
+        <p class="post-excerpt"></p>
+        <div class="post-categories"></div>
+        <div class="post-tags"></div>
+        <details class="post-content">
+          <summary>
+            Ver contenido de la publicacion
+          </summary>
+          <article></article>
+        </details>
+      </aside>
+    </article>
+    <hr>
+  </template>
+
+</body>
+<script src="app.js"></script>
+
+</html>
