@@ -38,7 +38,7 @@ const searchShow = async (url, query) => {
     }
   } catch (err) {
     let message = err.statusText || "Ha ocurrido un error";
-    $shows.innerHTML = `<h3>Error ${err.status}: ${err}</h3>`;
+    $shows.innerHTML = `<h3>Error ${err.status}: ${message}</h3>`;
   }
 };
 
